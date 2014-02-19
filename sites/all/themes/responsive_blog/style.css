@@ -1799,3 +1799,11 @@ width: 20% !important;
 .thright{
 width: 80% !important;
 }
+
+div.view-slideshow div.views-slideshow-pager-field-item{
+  display: inline-block; /* or even display: inline-block*/
+}
+.views-slideshow-pager-field-item.active {
+  background: #808080;
+}
+
