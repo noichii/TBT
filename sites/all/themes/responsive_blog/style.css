@@ -1744,7 +1744,12 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
 body.cke_editable {
   background: #fff;
 }
+
+
 div.view-slideshow div.views-slideshow-pager-field-item{
   display: inline-block; /* or even display: inline-block*/
+}
+.views-slideshow-pager-field-item.active {
+  background: #808080;
 }
 
