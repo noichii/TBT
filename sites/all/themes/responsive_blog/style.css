@@ -398,18 +398,47 @@ td{
 
 /* =Menu
 -------------------------------------------------------------- */
+#main-menu a{
+text-transform: uppercase;
+font: bold 12px/25px Arial, Helvetica;
+text-decoration: none;
+text-shadow: 0 1px 0 #000;
+padding: 10px 20px;
+text-decoration: none;
+word-wrap: break-word;
+font-family: Lato,sans-serif;
+font-size: 14px;
+color: #fff;
+}
+
+.menu ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: none;
+position: absolute;
+top: 35px;
+left: 0;
+z-index: 99999;
+background: #941818;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
 
 #header #navigation {
-  background: #222; /* Show a solid color for older browsers */
-  background: -moz-linear-gradient(#585858, #3d3d3d);
-  background: -o-linear-gradient(#585858, #3d3d3d);
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#585858), to(#3d3d3d)); /* older webkit syntax */
-  background: -webkit-linear-gradient(#585858, #3d3d3d);
+padding: 10px 0 0 5;
+				 list-style: none;
+background: #941818;
+						-moz-box-shadow: 0 2px 1px #9c9c9c;
+						-webkit-box-shadow: 0 2px 1px #9c9c9c;
+						box-shadow: 0 2px 1px #9c9c9c;
+
   clear: both;
   display: block;
   float: left;
   margin: 0 auto 2px;
-  width: 100%;
+
+	width: 100%;
 }
 #main-menu > ul.menu{
   font-size: 14px;
@@ -418,7 +447,6 @@ td{
   padding-left: 0;
 }
 #main-menu > ul.menu li {
-  border-right: 1px solid #444;
   float: left;
   position: relative;
   list-style: none outside none;
@@ -443,24 +471,39 @@ td{
   top: 3em;
   left: 0;
   list-style: none;
-  width: 188px;
   z-index: 99;
 }
 #main-menu > ul.menu ul ul {
   left: 100%;
   top: 0;
 }
+
 #main-menu > ul.menu ul a {
-  background: #f9f9f9;
-  border-bottom: 1px dotted #ccc;
-  color: #444;
+  background: #941818;
+  color: #FFF;
+	border-radius: 5px;
   font-size: 13px;
   font-weight: normal;
   height: auto;
   line-height: 1.4em;
   padding: 10px;
-  width: 168px;
+	width: 150px;
+	border-bottom: 1px solid #9E6A6A;
+	font-weight: bold;
+	text-transform: uppercase;
 }
+.menu ul li:first-child a:after{
+content: '';
+position: absolute;
+left: 30px;
+top: -8px;
+width: 0;
+height: 0;
+ border-left: 5px solid transparent;
+ border-right: 5px solid transparent;
+ border-bottom: 8px solid #941818;
+}
+
 #main-menu > ul.menu li:last-child, 
 #main-menu > ul.menu ul li {
   border:none;
@@ -472,18 +515,17 @@ td{
 }
 #main-menu > ul.menu li:hover > a,
 #main-menu > ul.menu a:focus{
-  background: #f9f9f9; /* Show a solid color for older browsers */
-  background: -moz-linear-gradient(#f9f9f9, #e5e5e5);
-  background: -o-linear-gradient(#f9f9f9, #e5e5e5);
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#e5e5e5)); /* Older webkit syntax */
-  background: -webkit-linear-gradient(#f9f9f9, #e5e5e5);
-  color: #373737;
+color: #941818;
+background-color: #f08221;
+
 }
 #main-menu > ul.menu li:hover > ul {
   display: block;
 }
 #main-menu > ul.menu a.active {
   font-weight: bold;
+	background: #f08221;
+	color: #941818;
 }
 
 #main-menu ul li.leaf, #main-menu ul li.expanded { list-style: none; }
@@ -1601,6 +1643,7 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
       float: none;
       text-align: center;
   }
+	
   .tinynav {
     background-image: none;
     background-color: transparent;
@@ -1743,4 +1786,16 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
 
 body.cke_editable {
   background: #fff;
+}
+
+.tableheader table, tr, td{
+	border-style: none !important;
+	padding: 0;
+	
+}
+.thleft{
+width: 20% !important;
+}
+.thright{
+width: 80% !important;
 }

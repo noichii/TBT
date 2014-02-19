@@ -66,6 +66,9 @@
 ?>
 <div id="wrapper">
   <header id="header" class="clearfix">
+	<table class="tableheader">
+		<tr>
+		<td class="thleft">
     <?php if (theme_get_setting('image_logo','responsive_blog')): ?>
       <?php if ($logo): ?><div id="site-logo"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
         <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
@@ -107,6 +110,8 @@
         </ul>
       </div>
     <?php endif; ?>
+		</td>
+		<td class="thright">
     <nav id="navigation" role="navigation">
       <div id="main-menu">
         <?php 
@@ -119,6 +124,9 @@
         ?>
       </div>
     </nav>
+		</td>
+		</tr>
+	</table>
   </header>
 
   <div id="preface-area" class="clearfix">
