@@ -112,6 +112,12 @@
     <?php endif; ?>
 		</td>
 		<td class="thright">
+		<div class="nnav">
+		<ul class='upper_nav'>
+		<li><a href="#">ABOUT US</a></li>
+		<li style="border-right:1px solid #8F8F8F;"><a href="#">CONTACT US</a></li>
+		</ul>
+		</div>
     <nav id="navigation" role="navigation">
       <div id="main-menu">
         <?php 
@@ -188,6 +194,7 @@
         <?php if (theme_get_setting('breadcrumbs')): ?><?php if ($breadcrumb): ?><div id="breadcrumbs"><?php print $breadcrumb; ?></div><?php endif;?><?php endif; ?>
         <?php print $messages; ?>
         <?php if ($page['content_top']): ?><div id="content_top"><?php print render($page['content_top']); ?></div><?php endif; ?>
+				<?php if (!$is_front):?>
         <div id="content-wrap">
           <?php print render($title_prefix); ?>
           <?php if ($title): ?><h1 class="page-title"><?php print $title; ?></h1><?php endif; ?>
@@ -197,6 +204,7 @@
           <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
           <?php print render($page['content']); ?>
         </div>
+				<?php endif;?>
       </section> <!-- /#main -->
     </div>
 
@@ -232,9 +240,3 @@
   </footer>
 
 </div>
-
-
-
-
-
-
