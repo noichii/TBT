@@ -70,8 +70,8 @@ body {
 #wrapper {
   /*margin: 0 auto 2em;*/
   margin: 0 auto;
-  /*max-width: 1000px;*/
-  max-width: 90%;
+  max-width: 1000px;
+  /*max-width: 90%;*/
 }
 #header hgroup {
   margin: 0 3%;
@@ -772,8 +772,8 @@ background-color: #f08221;
 #footer-area .block img,
 #sidebar .block img {
   height: auto;
-  /*max-width: 577px;*/
-  max-width: 100% !important;
+  max-width: 577px;
+  /*max-width: 100% !important;*/
 }
 
 #preface-area {
@@ -809,11 +809,11 @@ background-color: #f08221;
 ----------------------------------------------- */
 
 #footer-bottom {
-  border-top: 1px solid #ccc;
+/*  border-top: 1px solid #ccc;*/
   clear: both;
 }
 #footer-area {
-    background-color: #eee;
+/*    background-color: #eee;*/
     overflow: hidden;
     padding: 2em 3% 0;
 }
@@ -1894,4 +1894,27 @@ padding: 0px 7px;
 .upper_nav li {display:inline;}
 .nnav{
 	height: 55px;
+}
+.views_slideshow_cycle_main {
+width: 100%;
+float: left;
+}
+.views_slideshow_cycle_main .views-slideshow-cycle-main-frame {
+width: 99% !important;
+height: auto;
+}
+.views_slideshow_cycle_main .views-slideshow-cycle-main-frame-row {
+width: 100% !important;
+height: auto;
+}
+.views_slideshow_cycle_main .field-content {
+				max-width: 100%;
+width: 100%;
+}
+.views_slideshow_cycle_main .field-content img {
+				max-width: 100%;
+width: 100%;
+height: auto;
+margin: 0;
+padding: 0;
 }
